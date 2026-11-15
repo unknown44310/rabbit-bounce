@@ -133,9 +133,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qoi8n")
 }],
-"loop": 0,
+"loop": 1,
 "name": &"default",
-"speed": 9.5
+"speed": 10.5
 }, {
 "frames": [{
 "duration": 1.0,
@@ -184,7 +184,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"running",
-"speed": 7.0
+"speed": 15.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbqrc"]
@@ -198,9 +198,8 @@ texture_filter = 1
 position = Vector2(30, -5)
 scale = Vector2(2.65625, 2.96875)
 sprite_frames = SubResource("SpriteFrames_dynca")
-animation = &"running"
-frame = 8
-frame_progress = 0.23945731
+autoplay = "default"
+frame_progress = 0.95366347
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1114829516]
 position = Vector2(30, 4)
